@@ -4,9 +4,11 @@ import { env } from "~/env";
 
 export default {
   schema: "./src/server/db/schema.ts",
+  out:"./src/lib/migrations",
   dialect: "postgresql",
   dbCredentials: {
     url: env.DATABASE_URL,
   },
-  tablesFilter: ["insight-harbor_*"],
+  verbose: true,
+  strict: true,
 } satisfies Config;
