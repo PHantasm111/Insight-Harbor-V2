@@ -26,6 +26,10 @@ export default {
 				sans: [
 					'Open Sans',
 					'sans-serif'
+				],
+				kanit:[
+					'Kanit',
+					'sans-serif'
 				]
 			},
 			borderRadius: {

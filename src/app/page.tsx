@@ -1,8 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import React from "react";
 import ImageSlider from "~/components/imageSlider";
+import { RevealCard } from "~/components/RevealCard";
 import { AuroraBackground } from "~/components/ui/aurora-bg";
 import { Cover } from "~/components/ui/cover";
 import { images } from "~/constants";
@@ -48,6 +50,24 @@ export default function HomePage() {
         <div>
           <ImageSlider images={images} />
         </div>
+      </section>
+
+      <section id="Definition">
+        <h1 className="text-3xl md:text-7xl font-sans font-bold dark:text-white text-center py-8">
+          What is DataLake ?
+        </h1>
+        <div className="w-[70vw] mx-auto">
+          <Image src="/assets/datalake.webp" alt="datalake" width={800} height={800} className="mx-auto"/>
+          <p className="text-base md:text-4xl dark:text-neutral-200 text-justify p-4 mt-8">
+            A Data Lake is a centralized and scalable storage solution designed to handle
+            large volumes of data in its raw, native format. It serves as a foundational component
+            in modern data architecture, enabling organizations to manage, process,
+            and analyze diverse types of data efficiently. Below are the key characteristics and aspects of
+            a data lake.
+          </p>
+          <h2>Key Characteristics</h2>
+        </div>
+
       </section>
 
 

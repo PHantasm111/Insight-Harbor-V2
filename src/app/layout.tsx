@@ -3,8 +3,9 @@ import "~/styles/globals.css";
 import { type Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import { ThemeProvider } from "../components/theme-provider"
-import Navbar from "../components/Navbar";
 import Footer from "~/components/Footer";
+import Navbar from "~/components/Navbar";
+
 
 const OpenSans = Open_Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"] });
 
